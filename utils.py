@@ -76,7 +76,7 @@ def set_seed(seed):
     torch.backends.cudnn.deterministic = True
     torch.backends.cudnn.benchmark = False
 
-    
+GLOBAL_SEED = 228
 GLOBAL_WORKER_ID = None
 def worker_init_fn(worker_id):
     global GLOBAL_WORKER_ID
